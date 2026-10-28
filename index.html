@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ow Fyah – Mobile Games & Apps</title>
+<meta name="description" content="Ow Fyah is an independent developer of mobile games and apps for Android.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0f0b1e;--card:#1b1533;--text:#f4f1ff;--muted:#b3abd1;--accent:#ff7a3d;--accent2:#8b5cf6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:var(--accent)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{padding:22px 0;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:800;font-size:1.4rem;letter-spacing:.5px}
+  .logo span{color:var(--accent)}
+  nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:.95rem}
+  nav a:hover{color:var(--text)}
+  .hero{padding:80px 0 70px;text-align:center}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:800;line-height:1.15}
+  .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);max-width:560px;margin:18px auto 30px;font-size:1.05rem}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:13px 28px;border-radius:999px}
+  .btn:hover{opacity:.9}
+  section{padding:50px 0}
+  h2{font-size:1.7rem;margin-bottom:24px;text-align:center}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{background:var(--card);border-radius:16px;padding:24px}
+  .card .icon{font-size:2rem;margin-bottom:10px}
+  .card h3{font-size:1.1rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .contact{text-align:center}
+  .contact p{color:var(--muted);margin-bottom:18px}
+  footer{border-top:1px solid #2a2347;padding:26px 0;text-align:center;color:var(--muted);font-size:.85rem}
+  footer a{margin:0 8px}
+  @media(max-width:520px){nav a{margin-left:14px}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Ow <span>Fyah</span></div>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Fun, simple <em>mobile games</em> for everyone</h1>
+      <p>Ow Fyah is an independent developer creating casual games and handy apps for Android. Quick to learn, hard to put down.</p>
+      <a class="btn" href="https://play.google.com/store/apps/developer?id=Ow+Fyah">See our apps on Google Play</a>
+    </div>
+
+    <section id="games">
+      <h2>What we make</h2>
+      <div class="grid">
+        <div class="card"><div class="icon">🎮</div><h3>Arcade games</h3><p>One-tap, fast-paced games you can play in a few seconds or for hours.</p></div>
+        <div class="card"><div class="icon">🧩</div><h3>Puzzle games</h3><p>Brain teasers and level-based challenges that get harder as you go.</p></div>
+        <div class="card"><div class="icon">⚽</div><h3>Sports games</h3><p>Quick sports challenges you can play anywhere.</p></div>
+        <div class="card"><div class="icon">🛠️</div><h3>Useful apps</h3><p>Simple tools that make everyday tasks easier.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Questions, feedback or business inquiries? Send us an email.</p>
+      <a class="btn" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y">2026</span> Ow Fyah. All rights reserved.
+      <br><a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
